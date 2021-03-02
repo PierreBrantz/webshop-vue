@@ -2,8 +2,12 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from 'axios';
 
+//axios.defaults.baseURL = process.env.API_ENDPOINT;
 
 Vue.use(Vuex);
+
+
+
 
 export default new Vuex.Store({
   state: {
@@ -51,26 +55,31 @@ export default new Vuex.Store({
   },
   actions: {
     async fetchProductCategories({commit}){
-      const json = await axios.get("https://webshopbepi-app.herokuapp.com/product-categories").then(response => this.productCategories = response.data);
+
+
+
+      const json = await axios.get("http://localhost:8081/product-categories"
+       
+        ).then(response => this.productCategories = response.data);
       commit("SET_PRODUCT_CATEGORIES",json);
       commit("SET_PRODUCTS",null);
       commit("SET_PRODUCERS", null);
     },  
     async search({ commit },{ text }){
       
-      const json = await axios.get("https://webshopbepi-app.herokuapp.com//products/name/" + text).then(response => this.products = response.data);
+      const json = await axios.get("https://webshopbepi-app.herokuapp.com/products/name/" + text).then(response => this.products = response.data);
       commit("SET_PRODUCTS", json);  
       commit("SET_PRODUCT_CATEGORIES",null);  
       commit("SET_PRODUCERS", null);  
     },
     async fetchProducts({ commit },{ categoryId }){
-      const json = await axios.get("https://webshopbepi-app.herokuapp.com//products/category/" + categoryId).then(response => this.products = response.data);
+      const json = await axios.get("https://webshopbepi-app.herokuapp.com/products/category/" + categoryId).then(response => this.products = response.data);
       commit("SET_PRODUCTS", json);
       commit("SET_PRODUCT_CATEGORIES",null);  
       commit("SET_PRODUCERS", null); 
     },
     async fetchProducers({ commit }){
-      const json = await axios.get("https://webshopbepi-app.herokuapp.com//producers").then(response => this.producers = response.data);
+      const json = await axios.get("https://webshopbepi-app.herokuapp.com/producers").then(response => this.producers = response.data);
       commit("SET_PRODUCERS", json);
       commit("SET_PRODUCTS",null);  
       commit("SET_PRODUCT_CATEGORIES", null); 
