@@ -5,7 +5,7 @@ module.exports = {
        
       proxy: {
         "/": {
-          target: "http://localhost:8081"
+          target: "https://webshopbepi-app.herokuapp.com/"
                     
         },
       }
