@@ -2,14 +2,14 @@
     <div v-on:mouseover='mouseOver()' 
     v-on:mouseleave='mouseLeave()'>       
       <b-card 
-      no-body 
-      img-src="https://picsum.photos/600/300/?image=25"
-      img-alt="product"
+      no-body
+      :img-src=" 'img/' + productCategory.description"
+      img-alt="productCategory"
       img-top
       tag="article"
       style="max-width:10rem"
       class="mb-2" 
-      :footer="name" 
+      :footer="productCategory.name" 
       :bg-variant="bgVariant"
       >
       </b-card>
@@ -19,7 +19,7 @@
 
 <script>
 export default {
-    props: ['name'],
+    props: ['productCategory'],
     data(){
       return {
         bgVariant: 'light'
@@ -37,5 +37,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.card-img-top {
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+}
 </style>

@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3910ad0452438a243a3f",
-    "url": "/css/app.c32dfe66.css"
+    "revision": "9fbe3cb8377eb6c318fe",
+    "url": "/css/app.407a9c4d.css"
   },
   {
     "revision": "7105794d09008ede45dd",
@@ -10,6 +10,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f341cfbd9560f2b4e5ef8d12f118fda2",
     "url": "/delta.jpg"
+  },
+  {
+    "revision": "fe62b1e8a4a5b88e5474d1f7a19d84f1",
+    "url": "/img/bieres.jpg"
+  },
+  {
+    "revision": "69d9a619d4e2af906a8824a8879b8df2",
+    "url": "/img/boucherie.jpg"
+  },
+  {
+    "revision": "9c79e25d74a25353ac1203f8d8935ce4",
+    "url": "/img/cafe.jpg"
   },
   {
     "revision": "465abc1d4e0bf9cab531599a3c827fe2",
@@ -24,11 +36,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/delta.jpg"
   },
   {
+    "revision": "d928800761ed5dfa03ae6f32a24ea5bf",
+    "url": "/img/lait.jpg"
+  },
+  {
+    "revision": "0e67ed01f906a3638968d9f73162f073",
+    "url": "/img/legumes.jpg"
+  },
+  {
+    "revision": "6ab9aa59a3b87b58eb7e9c02d1e58c83",
+    "url": "/img/oeufs.jpg"
+  },
+  {
     "revision": "b79ab8989a297f3d562d612dbf6a71e3",
     "url": "/img/orval.jpg"
   },
   {
-    "revision": "93379b5c4465a1712e0bcee0eaa262c2",
+    "revision": "3df608fe2252662ac7813380d7f34cba",
     "url": "/index.html"
   },
   {
@@ -40,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/about.d284a51b.js"
   },
   {
-    "revision": "3910ad0452438a243a3f",
-    "url": "/js/app.3612831d.js"
+    "revision": "9fbe3cb8377eb6c318fe",
+    "url": "/js/app.80b8df9c.js"
   },
   {
     "revision": "7105794d09008ede45dd",

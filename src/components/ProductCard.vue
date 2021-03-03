@@ -1,5 +1,6 @@
 <template>
-    <div>       
+    <div> 
+           
       <b-card 
       :title="product.name"
       :img-src=" 'img/' + product.label"
