@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.8ba958e09fc59f4b8f26ebf358d36d2f.js"
+  "/precache-manifest.c54b9f010b5c8c9f9ff775fbe4172e75.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "webshop-vue"});
