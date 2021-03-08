@@ -5,7 +5,7 @@ module.exports = {
        
       proxy: {
         "/": {
-          target: "https://webshopbepi-app.herokuapp.com",
+          target: "https://webshopbepi-app.herokuapp.com/",
           
           
                     
