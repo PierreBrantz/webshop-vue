@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from 'axios';
 
-//axios.defaults.baseURL = process.env.API_ENDPOINT;
+axios.defaults.baseURL = "https://webshopbepi-app.herokuapp.com/";
 
 Vue.use(Vuex);
 
@@ -56,7 +56,7 @@ export default new Vuex.Store({
   actions: {
     async fetchProductCategories({commit}){
      
-    
+    console.log(process.env.API_ENDPOINT);
 
 
       const json = await axios.get("/product-categories").then(response => this.productCategories = response.data);
